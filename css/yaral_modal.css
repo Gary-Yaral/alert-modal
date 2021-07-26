@@ -1,0 +1,126 @@
+:root{
+    --modal-green: rgb(115, 221, 115);
+    --modal-blue: rgb(36, 122, 235);
+    --modal-text: rgb(126, 126, 126);
+    --modal-title: rgb(104, 104, 104);
+}
+
+*{
+    padding:0;
+    margin:0;
+}
+
+.modal-alert{
+    display:flex;
+    position:fixed;
+    background:rgba(0,0,0,0.6);
+    width:100%;
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+    font-weight:bold;
+    font-family: Lato;
+}
+
+.modal-container{
+    background:#fff;
+    padding: 1rem;
+    display:flex;
+    width:478px;
+    flex-direction:column;
+    align-items: center;
+    border-radius:.5rem;
+    font-family: Lato;
+}
+
+.modal-content{
+    width:90%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:1rem;
+    margin-bottom: 2.5rem;
+    color: var(--modal-text);
+    font-weight:normal;
+}
+
+.modal-alert-icon{
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+    margin-top: 1rem;
+    width:5rem;
+    height:5rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    color: var(--modal-blue);
+    border-radius:50%;
+    border: 3px solid var(--modal-blue);
+
+}
+
+.modal-container h1{
+    width: 90%;
+    word-wrap: break-word;
+    color: var(--modal-title);
+    font-size:1.6rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-btn{
+    width:100%;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: .5rem;
+}
+
+.modal-btn button{
+    padding:.6rem;
+    outline:none;
+    border-radius:.5rem;
+    cursor:pointer;
+    font-weight: bold;
+    font-size:1rem;
+    font-family: Lato;
+}
+
+.modal-btn button:nth-child(1){
+    background:rgb(226, 226, 226);
+    color: var(--modal-text);
+    margin-right: .5rem;
+    width:6rem;
+    border:none;
+}
+
+.modal-btn button:nth-child(1):active{
+    color:rgb(240, 240, 240);
+    background: rgb(92, 92, 92);
+    margin-right: .5rem;
+    width:6rem;
+    border:none;
+}
+
+.modal-btn button:nth-child(2){
+    background:var(--modal-blue);
+    width:3rem;
+    color: #fff;
+    border: 3px solid rgb(164, 211, 243);
+}
+
+.modal-btn button:nth-child(2):active{
+    color:var(--modal-blue);
+    width:3rem;
+    background: #fff;
+    border: 3px solid rgb(164, 211, 243);
+}
+
+@media  screen and (max-width:480px) {
+    .modal-container{
+        width:85%;
+    }
+    
+}
